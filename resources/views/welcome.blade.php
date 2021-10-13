@@ -2,7 +2,10 @@
 
 @section('content')
     @if (Auth::check())
-        {{ Auth::user()->name }}
+        <div class="col-sm-8">
+
+                @include('posts.posts')
+        </div>
     @else
         <div class="text-center">
             <h1>釣果日誌</h1>
