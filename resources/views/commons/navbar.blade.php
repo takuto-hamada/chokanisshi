@@ -11,6 +11,7 @@
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
                 @if (Auth::check())
+                    <li class="nav-item">{!! link_to_route('search', '投稿検索',[], ['class' => 'nav-link']) !!}</li>
                     <li class="nav-item">{!! link_to_route('posts.create', '新規投稿',[], ['class' => 'nav-link']) !!}</li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">メニュー</a>

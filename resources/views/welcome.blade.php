@@ -4,7 +4,7 @@
     @if (Auth::check())
         <div class="col-sm-8">
 
-                @include('posts.posts')
+                @include('users.show')
         </div>
     @else
         <div class="text-center">
